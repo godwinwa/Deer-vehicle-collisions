@@ -1,0 +1,39 @@
+{
+  "data": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"attributes.AD_ID","type":"string"},
+      {"name":"attributes.NUMMER","type":"double"},
+      {"name":"attributes.OBJECTBEGINTIJD","type":"bigint"},
+      {"name":"attributes.OBJECTEINDTIJD","type":"string"},
+      {"name":"attributes.OBJECTID","type":"bigint"},
+      {"name":"attributes.OMTREK","type":"double"},
+      {"name":"attributes.OPMERKING","type":"string"},
+      {"name":"attributes.OPPERVLAKTE","type":"double"},
+      {"name":"attributes.SHAPE.AREA","type":"double"},
+      {"name":"attributes.SHAPE.LEN","type":"double"},
+      {"name":"attributes.TRAJECT","type":"string"},
+      {"name":"attributes.VERWERKINGSSTATUS","type":"string"},
+      {"name":"geometry.rings","type":"string"},
+      {"name":"geometry","type":"string"}
+    ],
+    "userModified": false
+  }
+}

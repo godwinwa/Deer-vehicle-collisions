@@ -1,0 +1,416 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "shortDesc": "Wegvak met objecten en aanrijdingen",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "acheampongg"
+    },
+    "lastModifiedOn": 1625421412179
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "acheampongg"
+    },
+    "lastModifiedOn": 1625421248316
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_dataiku",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_objects_dvc_by_wegvak",
+    "schema": "dataiku",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "WEGVAK",
+        "type": "string"
+      },
+      {
+        "name": "15_first",
+        "type": "double"
+      },
+      {
+        "name": "16_first",
+        "type": "double"
+      },
+      {
+        "name": "17_first",
+        "type": "double"
+      },
+      {
+        "name": "19_first",
+        "type": "double"
+      },
+      {
+        "name": "20_first",
+        "type": "double"
+      },
+      {
+        "name": "23_first",
+        "type": "double"
+      },
+      {
+        "name": "27_pomp_first",
+        "type": "double"
+      },
+      {
+        "name": "28_first",
+        "type": "double"
+      },
+      {
+        "name": "29_first",
+        "type": "double"
+      },
+      {
+        "name": "30_first",
+        "type": "double"
+      },
+      {
+        "name": "31_first",
+        "type": "double"
+      },
+      {
+        "name": "35_first",
+        "type": "double"
+      },
+      {
+        "name": "36_first",
+        "type": "double"
+      },
+      {
+        "name": "39_first",
+        "type": "double"
+      },
+      {
+        "name": "40_first",
+        "type": "double"
+      },
+      {
+        "name": "46_first",
+        "type": "double"
+      },
+      {
+        "name": "64_first",
+        "type": "double"
+      },
+      {
+        "name": "76_first",
+        "type": "double"
+      },
+      {
+        "name": "77_first",
+        "type": "double"
+      },
+      {
+        "name": "81_first",
+        "type": "double"
+      },
+      {
+        "name": "87_first",
+        "type": "double"
+      },
+      {
+        "name": "Tijd_first",
+        "type": "string"
+      },
+      {
+        "name": "closest_segment_first",
+        "type": "string"
+      },
+      {
+        "name": "Distance_15_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_16_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_17_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_18_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_19_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_23_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_20_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_22_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_25_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_27_pomp_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_27_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_27_Zonnepaneel_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_28_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_29_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_30_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_31_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_36_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_35_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_32_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_38_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_40_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_39_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_46_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_64_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_76_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_77_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_81_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_86_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_87_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_97_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Afstand_zeebrug_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Afstand_p1_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Afstand_p2_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Afstand_p3_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Distance_Parking_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Nearest_Parking_x_first",
+        "type": "string"
+      },
+      {
+        "name": "Distance_Busstation_x_first",
+        "type": "double"
+      },
+      {
+        "name": "Hekken_first",
+        "type": "double"
+      },
+      {
+        "name": "DVC_first",
+        "type": "double"
+      },
+      {
+        "name": "Ree_first",
+        "type": "double"
+      },
+      {
+        "name": "Damhert_first",
+        "type": "double"
+      },
+      {
+        "name": "DVC_before_first",
+        "type": "double"
+      },
+      {
+        "name": "count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {
+    "gdpr_contains_personal_data": "UNSURE"
+  }
+}

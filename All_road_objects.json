@@ -1,0 +1,644 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "shortDesc": "Eerste 70 soorten wegobjecten",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "acheampongg"
+    },
+    "lastModifiedOn": 1625046288374
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "acheampongg"
+    },
+    "lastModifiedOn": 1620907898241
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "postgres_dataiku",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_all_road_objects",
+    "schema": "dataiku",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "ID",
+        "type": "bigint"
+      },
+      {
+        "name": "attributes.aantalgroepen",
+        "type": "string"
+      },
+      {
+        "name": "attributes.aantaloverspanning",
+        "type": "double"
+      },
+      {
+        "name": "attributes.aantalwindingen",
+        "type": "double"
+      },
+      {
+        "name": "attributes.ad_id",
+        "type": "string"
+      },
+      {
+        "name": "attributes.afstandverharding",
+        "type": "double"
+      },
+      {
+        "name": "attributes.afvalwatertype",
+        "type": "string"
+      },
+      {
+        "name": "attributes.automaatkoppeling",
+        "type": "string"
+      },
+      {
+        "name": "attributes.automaatnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.bedrijfsspanning",
+        "type": "double"
+      },
+      {
+        "name": "attributes.beheerder",
+        "type": "string"
+      },
+      {
+        "name": "attributes.beheerobjectsubtyp",
+        "type": "string"
+      },
+      {
+        "name": "attributes.bgtplustype",
+        "type": "string"
+      },
+      {
+        "name": "attributes.bodemhoogte",
+        "type": "double"
+      },
+      {
+        "name": "attributes.boomsituering",
+        "type": "string"
+      },
+      {
+        "name": "attributes.boomsoort",
+        "type": "string"
+      },
+      {
+        "name": "attributes.bordnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.bouwjaar",
+        "type": "string"
+      },
+      {
+        "name": "attributes.bronhouder",
+        "type": "string"
+      },
+      {
+        "name": "attributes.cat_waterloop",
+        "type": "string"
+      },
+      {
+        "name": "attributes.codekabel",
+        "type": "string"
+      },
+      {
+        "name": "attributes.contractnumonderh",
+        "type": "string"
+      },
+      {
+        "name": "attributes.dataleverancier",
+        "type": "string"
+      },
+      {
+        "name": "attributes.datumplaatsing",
+        "type": "double"
+      },
+      {
+        "name": "attributes.detectienummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.diameter",
+        "type": "string"
+      },
+      {
+        "name": "attributes.diametermm",
+        "type": "double"
+      },
+      {
+        "name": "attributes.dieptelegging",
+        "type": "string"
+      },
+      {
+        "name": "attributes.doorrijhoogterijst",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorrijhoogterijst_1",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorrijhoogterijst_2",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorrijhoogterijst_3",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorrijhoogterijst_4",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorrijhoogterijst_5",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorvaarthoogte1",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorvaarthoogte2",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorvaarthoogte3",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorvaarthoogte4",
+        "type": "double"
+      },
+      {
+        "name": "attributes.doorvaarthoogte5",
+        "type": "double"
+      },
+      {
+        "name": "attributes.eigenaar",
+        "type": "string"
+      },
+      {
+        "name": "attributes.fabrikanttypecode",
+        "type": "string"
+      },
+      {
+        "name": "attributes.faunasoort",
+        "type": "string"
+      },
+      {
+        "name": "attributes.foto",
+        "type": "string"
+      },
+      {
+        "name": "attributes.foto2",
+        "type": "string"
+      },
+      {
+        "name": "attributes.fysiekvoorkomen",
+        "type": "string"
+      },
+      {
+        "name": "attributes.gisib_id",
+        "type": "string"
+      },
+      {
+        "name": "attributes.gsmnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.hectometer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.hoogte",
+        "type": "string"
+      },
+      {
+        "name": "attributes.hoogtebovennap",
+        "type": "string"
+      },
+      {
+        "name": "attributes.huidigestatus",
+        "type": "string"
+      },
+      {
+        "name": "attributes.imkl_innetwork",
+        "type": "string"
+      },
+      {
+        "name": "attributes.indicatieveligging",
+        "type": "string"
+      },
+      {
+        "name": "attributes.innetwerk",
+        "type": "string"
+      },
+      {
+        "name": "attributes.kastnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.kastovl",
+        "type": "string"
+      },
+      {
+        "name": "attributes.kastvri",
+        "type": "string"
+      },
+      {
+        "name": "attributes.kerendehoogte",
+        "type": "string"
+      },
+      {
+        "name": "attributes.kilometrering",
+        "type": "string"
+      },
+      {
+        "name": "attributes.kp_code",
+        "type": "double"
+      },
+      {
+        "name": "attributes.kwbreedte",
+        "type": "double"
+      },
+      {
+        "name": "attributes.kwhoogte",
+        "type": "double"
+      },
+      {
+        "name": "attributes.kwlengte",
+        "type": "string"
+      },
+      {
+        "name": "attributes.lantaarnnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.lengte",
+        "type": "string"
+      },
+      {
+        "name": "attributes.lengteuithouder1",
+        "type": "string"
+      },
+      {
+        "name": "attributes.lengteuithouder2",
+        "type": "string"
+      },
+      {
+        "name": "attributes.lichtpuntnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.locatie",
+        "type": "string"
+      },
+      {
+        "name": "attributes.mastnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.materiaaltype",
+        "type": "string"
+      },
+      {
+        "name": "attributes.montagewijze",
+        "type": "string"
+      },
+      {
+        "name": "attributes.naam",
+        "type": "string"
+      },
+      {
+        "name": "attributes.ndw_code",
+        "type": "string"
+      },
+      {
+        "name": "attributes.nenbeheerobject",
+        "type": "string"
+      },
+      {
+        "name": "attributes.nominalespanning",
+        "type": "double"
+      },
+      {
+        "name": "attributes.nummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.nummergekoppeldeau",
+        "type": "string"
+      },
+      {
+        "name": "attributes.objectbegintijd",
+        "type": "double"
+      },
+      {
+        "name": "attributes.objectcode",
+        "type": "string"
+      },
+      {
+        "name": "attributes.objecteindtijd",
+        "type": "string"
+      },
+      {
+        "name": "attributes.objectid",
+        "type": "bigint"
+      },
+      {
+        "name": "attributes.oevervak",
+        "type": "string"
+      },
+      {
+        "name": "attributes.omtrek",
+        "type": "string"
+      },
+      {
+        "name": "attributes.onderhouder",
+        "type": "string"
+      },
+      {
+        "name": "attributes.opmerking",
+        "type": "string"
+      },
+      {
+        "name": "attributes.oppervlakte",
+        "type": "string"
+      },
+      {
+        "name": "attributes.paal",
+        "type": "string"
+      },
+      {
+        "name": "attributes.paal2",
+        "type": "string"
+      },
+      {
+        "name": "attributes.paalnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.plaats",
+        "type": "string"
+      },
+      {
+        "name": "attributes.postcode_plaats",
+        "type": "string"
+      },
+      {
+        "name": "attributes.priovoorzieningen",
+        "type": "string"
+      },
+      {
+        "name": "attributes.reflectieklasse",
+        "type": "string"
+      },
+      {
+        "name": "attributes.relatievehoogteligging",
+        "type": "double"
+      },
+      {
+        "name": "attributes.rvvtypebord",
+        "type": "string"
+      },
+      {
+        "name": "attributes.serienummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.simnummer",
+        "type": "string"
+      },
+      {
+        "name": "attributes.snoeifase",
+        "type": "string"
+      },
+      {
+        "name": "attributes.st_area(shape)",
+        "type": "double"
+      },
+      {
+        "name": "attributes.st_length(shape)",
+        "type": "double"
+      },
+      {
+        "name": "attributes.st_perimeter(shape)",
+        "type": "double"
+      },
+      {
+        "name": "attributes.tekst",
+        "type": "string"
+      },
+      {
+        "name": "attributes.telpuntcode",
+        "type": "string"
+      },
+      {
+        "name": "attributes.topcode",
+        "type": "string"
+      },
+      {
+        "name": "attributes.traject",
+        "type": "string"
+      },
+      {
+        "name": "attributes.traject2",
+        "type": "string"
+      },
+      {
+        "name": "attributes.typeplaaginvasiesoort",
+        "type": "string"
+      },
+      {
+        "name": "attributes.typeplaagsoort",
+        "type": "string"
+      },
+      {
+        "name": "attributes.typespec",
+        "type": "string"
+      },
+      {
+        "name": "attributes.van",
+        "type": "string"
+      },
+      {
+        "name": "attributes.verwerkingsstatus",
+        "type": "string"
+      },
+      {
+        "name": "attributes.waterdiepte",
+        "type": "string"
+      },
+      {
+        "name": "attributes.wegnr",
+        "type": "string"
+      },
+      {
+        "name": "attributes.worteldoek_scherm",
+        "type": "string"
+      },
+      {
+        "name": "attributes.xcoordinaat",
+        "type": "string"
+      },
+      {
+        "name": "attributes.ycoordinaat",
+        "type": "string"
+      },
+      {
+        "name": "attributes.zijde",
+        "type": "string"
+      },
+      {
+        "name": "attributes.zijweg",
+        "type": "string"
+      },
+      {
+        "name": "geometry.paths",
+        "type": "string"
+      },
+      {
+        "name": "geometry.points",
+        "type": "string"
+      },
+      {
+        "name": "geometry.rings",
+        "type": "string"
+      },
+      {
+        "name": "geometry.x",
+        "type": "double"
+      },
+      {
+        "name": "geometry.y",
+        "type": "double"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {
+    "gdpr_contains_personal_data": "UNSURE"
+  }
+}
